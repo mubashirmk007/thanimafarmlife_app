@@ -1,0 +1,8 @@
+.adventures-wrapper{
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+.adventures-wrapper h2{
+    font-weight: 600;
+}

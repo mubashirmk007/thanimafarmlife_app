@@ -1,0 +1,136 @@
+.about-wrapper{
+    /* background: #4F7942; */
+    overflow: hidden;
+    position: relative;
+}
+/* .heading h1{
+    color: #4F7942;
+    color: #FAF9F6;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 55px;
+    font-weight: 600;
+} */
+.about-leafs{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 150px auto;
+}
+.about-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    text-align: left;
+}
+.animate-up{
+    animation: fadeInUp 2s ease forwards;
+}
+.about-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #4F7942;
+    font-weight: 500;
+    text-shadow: 1px 1px #a09e9e;
+}
+.about-content p{
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    color: #686666;
+    text-shadow:1px 1px #373636;
+}
+.about-content button{
+    display: inline-block;
+    background-color: transparent;
+    color: #4F7942;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: 2px solid #4F7942;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.about-content button:hover{
+    background-color: #4F7942;
+    transform: scale(1.1);
+    color: #fff;
+}
+.about-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+.animate-right{
+    animation: fadeInRight 2s ease forwards;
+}
+.about-image img{
+    width: 100%;
+    height: auto;
+    border: 20px solid #dce5da;
+    box-shadow: 2px 2px #939493;
+    border-radius: 10% 10% 10% 10% / 50%  50%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-leafs{
+        display: none;
+    }
+    .about-wrapper{
+        margin: 0px;
+    }
+    .about-container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .about-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .about-content h2{
+        font-size: 30px;
+    }
+    .about-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .about-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .about-image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+

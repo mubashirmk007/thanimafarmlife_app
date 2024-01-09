@@ -1,0 +1,106 @@
+.package-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    /* background-color: #4F7942 ; */
+    position: relative;
+    overflow: hidden;
+}
+/* .package-wrapper .package-contact{
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    transform: rotate(-0.06turn);
+    transition: transform 0.5s;
+
+} */
+/* .package-wrapper .package-contact:hover{
+    transform: rotate(-0.08turn) translateX(-20px);
+} */
+/* .package-wrapper .package-contact{
+    width: 180px;
+} */
+.package-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.package-container .package-card{
+    position: relative;
+    cursor: pointer;
+    min-width: 380px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(235, 237, 236, 0.5),
+                5px 5px 5px rgba(0 , 0, 0, 0.05),
+                inset -5px -5px 5px rgba(235, 237, 236, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+.package-container .package-card .package-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.package-container .package-card .package-box:hover{
+    transform:  translateY(-30px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.package-container .package-card .package-box .package-content{
+    padding: 10px;
+    text-align: center;
+}
+.package-container  .package-box .package-content h2{
+    font-size: 1.8em;
+    z-index: 1;
+    transition: 0.5s;
+    color: #777;
+    
+}
+.package-container  .package-box .package-content p{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.package-container  .package-box .package-content ul{
+    padding: 0;
+}
+.package-container  .package-box .package-content ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.package-container  .package-box .package-content ul li p{
+    font-size: 16px;
+    text-align: left;
+}
+.package-box .package-content p >span{
+    font-size: 28px;
+    font-weight: 600;
+    color: green;
+}
+.package-container  .package-box .package-content h2 .icons{
+    font-size: 38px !important;
+}
+@media (max-width:420px){
+    .package-container .package-card {
+        box-shadow: none;
+    }
+    .package-container .package-card .package-box{
+        box-shadow: none;
+    }
+}
