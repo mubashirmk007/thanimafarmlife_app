@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import profile1 from "../../assets/images/testi2.jpg";
 import profile2 from "../../assets/images/testi4.jpg";
 import profile3 from "../../assets/images/testi5.jfif";
 import profile4 from "../../assets/images/testi6.jfif";
 import profile5 from "../../assets/images/nullprofile.webp";
-import axios from 'axios';
+// import axios from 'axios';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -14,23 +14,23 @@ import "swiper/css/pagination";
 
 function Testimonials() {
 
-  const [reviews, setReviews] = useState([]);
+  // const [reviews, setReviews] = useState([]);
 
-  useEffect(() => {
-    const apiKey = 'AIzaSyAf7RSXesSD850zbN6_OKhEWCtcq1S5jDQ';
-    const placeId = '0x3ba687005542b1c5:0x2c1735d5ba596425';
+  // useEffect(() => {
+  //   const apiKey = 'AIzaSyAf7RSXesSD850zbN6_OKhEWCtcq1S5jDQ';
+  //   const placeId = '0x3ba687005542b1c5:0x2c1735d5ba596425';
 
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
+  //   const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
 
-    axios.get(url)
-      .then(response => {
-        setReviews(response.data.result.reviews);
-      })
-      .catch(error => {
-        console.error('Error fetching Google Reviews:', error);
-      });
-  }, []);
-  console.log(reviews, "reviews==")
+  //   axios.get(url)
+  //     .then(response => {
+  //       setReviews(response.data.result.reviews);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching Google Reviews:', error);
+  //     });
+  // }, []);
+  // console.log(reviews, "reviews==")
   const dummyData = [
     {
       id: 0,
