@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build",
+    "build": "node --max-old-space-size=4096 gatsby build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

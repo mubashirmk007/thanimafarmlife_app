@@ -1,13 +1,9 @@
 import React from 'react'
-import contactman from '../../assets/images/contactman.png'
 
 function Packages() {
   return (
     <div id='packages' className='package-wrapper d-flex flex-column h-100'>
         <h3>Our Packages Includes...</h3>
-        {/* <div className='package-contact'>
-        <img src={contactman} alt=''/>
-        </div> */}
         <div className='package-container'>
             <div className='package-card'>
                 <div className='package-box'>
