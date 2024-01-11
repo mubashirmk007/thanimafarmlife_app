@@ -116,21 +116,32 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
+    /* background-color: #0f131a; */
   }
-.navbar-link .item-link {
-    text-decoration: none;
-    color: #fff;
+  .nav-link  .navbar-link{
+    text-decoration: none !important;
+    color: #fff !important;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding: 0 15px;
+    font-size: 18px;
+    opacity: 0.75;
   }
   nav.navbar.scrolled {
     padding: 18px 0;
-    background-color: #fff;
+    background-color: #0f131a;
+    /* background-color: #fff; */
   }
-  nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
-    color: #121212 !important;
+.active .navbar-link{
+    background-color:#4F7942;
+    border-radius: 5px;
   }
+    /* nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
+        color: #121212 !important;
+    } */
   nav.navbar.scrolled .navbar-nav .nav-link .item-link {
     text-decoration: none;
-    color: #121212 !important;
+    /* color: #121212 !important; */
   }
   nav.navbar a.navbar-brand {
       width: 3%;
@@ -267,6 +278,8 @@ nav.navbar {
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       border-color: transparent;
   }
-  .navbar-collapse .collapse.show{
-    background-color: #fff;
+  .navbar-collapse.collapse.show{
+    background-color: #000 !important;
+    transition: ease 1s;
+    padding: 10px;
   }

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import img1 from "../../assets/images/buggy2.JPG";
-import img2 from "../../assets/images/hydroponics.JPG";
-import img3 from "../../assets/images/kayaking.JPG";
-import img4 from "../../assets/images/skycycling2.JPG";
-import img5 from "../../assets/images/hut.JPG";
-import img6 from "../../assets/images/kettu.png";
-import img7 from "../../assets/images/bird.JPG";
-import img8 from "../../assets/images/cat.JPG";
+import img1 from "../../assets/images/buggy-resized.jpg";
+import img2 from "../../assets/images/hydroponics-resized.jpg";
+import img3 from "../../assets/images/kayaking-resized.jpg";
+import img4 from "../../assets/images/skycycling-resized.jpg";
+import img5 from "../../assets/images/hut-resized.jpg";
+import img6 from "../../assets/images/kettu-resized.jpg";
+import img7 from "../../assets/images/bird-resized.jpg";
+import img8 from "../../assets/images/cat-resized.jpg";
 
 function Gallery() {
   const images = [img1, img2, img3, img4, img5, img6];

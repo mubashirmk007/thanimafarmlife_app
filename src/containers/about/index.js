@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import aboutImg from "../../assets/images/frontside.JPG";
+import aboutImg from "../../assets/images/frontside-resized.jpg";
 
 const About = () => {
   const [position, setPosition] = useState(false);

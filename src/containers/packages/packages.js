@@ -1,39 +1,156 @@
-import React from 'react'
+import React from "react";
+import activity1 from "../../assets/images/activity1.jpg";
+import activity2 from "../../assets/images/activity2.jpg";
+import activity3 from "../../assets/images/activity3.jpg";
+import activity4 from "../../assets/images/activity4.jpg";
+import activity5 from "../../assets/images/activity5.jpg";
+import activity6 from "../../assets/images/activity6.jpg";
+import activity7 from "../../assets/images/activity7.jpg";
+import activity8 from "../../assets/images/activity8.jpg";
+import activity9 from "../../assets/images/activity9.jpg";
+import activity10 from "../../assets/images/activity10.jpg";
+import activity11 from "../../assets/images/activity11.jpg";
+
+
+
 
 function Packages() {
   return (
-    <div id='packages' className='package-wrapper d-flex flex-column h-100'>
-        <h3>Our Packages Includes...</h3>
-        <div className='package-container'>
-            <div className='package-card'>
-                <div className='package-box'>
-                    <div className='package-content'>
-                        <h2 className='d-flex justify-content-center align-items-center gap-3'> <i className="bi bi-bicycle text-success icons"></i> Day Out Plan</h2>
-                        <p>Starts from <span className='package-price'>&#x20B9; 1200/- </span> including food and Activities.<small>(taxes extra)</small></p>
-                        <ul className='px-3'>
-                            <li><p>Booking open two weeks in advance.</p></li>
-                            <li><p>Timing: 9 AM to 6 PM</p></li>
-                            <li><p>Weekend plans are higher</p></li>
-                        </ul>
-                    </div>
-                </div>
+    <div id="packages" className="package-wrapper d-flex flex-column h-100">
+      <h3>Our Packages Includes...</h3>
+      <div className="package-container">
+        <div className="package-card">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide package-carousal"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src={activity1} alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity2} alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity4} alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity10} alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity5} alt="Third slide" />
+              </div>
             </div>
-            <div className='package-card'>
-                <div className='package-box'>
-                    <div className='package-content pt-5'>
-                        <h2 className='d-flex justify-content-center align-items-center gap-3 mt-4'><i className="bi bi-house text-success icons"></i> Stay Plan</h2>
-                        <p>Starts from <span className='package-price'>&#x20B9; 6500/- </span> including food and Activities.<small>(taxes extra)</small></p>
-                        <ul className='mb-4 px-3'>
-                            <li><p>Nalukettu, House boat, and Ettukettu</p></li>
-                            <li><p>Three times food and refreshments provided.</p></li>
-                            <li><p>Weekend plans are higher</p></li>
-                        </ul>
-                    </div>
-                </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div className="package-content">
+            <h2 className="d-flex justify-content-center align-items-center gap-3 font-weight-bold">
+              {" "}
+              DAY OUT PACKAGE - INCLUDING HIGH ROPE ACTIVITIES
+            </h2>
+            <p>
+              Day Out Package 20+ activities for week days 1275/head only
+              (Monday to Friday)
+            </p>
+            <p>10:00AM 5:30 PM 10 Maximum Guests</p>
+            <div className="d-flex align-items-center">
+              <h5 className="package-price text-success font-weight-bold">
+                &#8377; 1485.00
+              </h5>{" "}
+              <small>/day</small>{" "}
             </div>
+          </div>
         </div>
+        <div className="package-card">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide package-carousal"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src={activity11} alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity6} alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity7} alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity8} alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src={activity9} alt="Third slide" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div className="package-content">
+            <h2 className="d-flex justify-content-center align-items-center gap-3 font-weight-bold">
+              {" "}
+              WITH OUT HIGHROPE ACTIVITIES
+            </h2>
+            <p>DAY OUT PACKGE 20+ ACTIVITIES</p>
+            <p>10:00AM 5:30 PM 10 Maximum Guests</p>
+            <div className="d-flex align-items-center">
+              <h5 className="package-price text-success font-weight-bold">
+                &#8377; 1185.00
+              </h5>{" "}
+              <small>/day</small>{" "}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Packages
+export default Packages;

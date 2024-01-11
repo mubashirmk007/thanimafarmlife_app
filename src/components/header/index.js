@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import {Link} from 'react-scroll'
+import logo from '../../assets/images/logo_white.svg'
 
 const Header = ({menuItems}) => {
   const navigate = useNavigate()
@@ -10,8 +11,8 @@ const Header = ({menuItems}) => {
   const [scrolled, setScrolled] = useState(false);
   const [navColor, setNavColor] = useState(false)
   const {pathname} = useLocation()
-  console.log(pathname, "pathname")
-  const paths = ["/","/home","/about", "/packages", "/gallery", "/activities", "/contact", "/weekly-update", "testimonials"]
+  console.log(activeLink, "activeLink")
+  const paths = ["/","/home","/about", "/packages", "/gallery", "/activities", "/contact", "/weekly-update", "/testimonials"]
   useEffect(() => {
     if (!paths.includes(pathname)) {
       setNavColor(true);
@@ -35,18 +36,22 @@ const Header = ({menuItems}) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value) => {
+  const onUpdateActiveLink = async(value) => {
     setActiveLink(value);
   };
-  const handleRoute = (path) => {
-    navigate(path)
+  const handleRoute = async(path, value) => {
+    setActiveLink(value);
+    if(path === 'booking'){
+      window.location.href = 'https://booking.thanimafarmlife.in/';
+    }
+    else navigate(path)
   }
 
   return (
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            {/* <img src={logo} alt="Logo" /> */}
+          <Navbar.Brand style={{paddingLeft: '39px',width: "140px"}} href="/">
+            <img style={{width: "100px"}} src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -55,16 +60,13 @@ const Header = ({menuItems}) => {
             <Nav className="ms-auto">
               {menuItems.map((item) => (
               <Nav.Link
-              href={`#${item.path}`}
-              className={
-                activeLink === `${item.path}` ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink(item.path)}
-              ><Link  
-              scrolling="center"
-              onClick={() => handleRoute(item.id)}
-              className='item-link'
-              style={{color: navColor ? '#121212' : ''}}
+              // href={`#${item.path}`}
+              onClick={() => onUpdateActiveLink(item.id)}
+              >{console.log(item.path)}<Link  
+              className={`item-link ${activeLink === item.id ? "active navbar-link" : "navbar-link"}`}
+              scrolling="top"
+              onClick={() => handleRoute(item.id, item.id)}
+              // style={{color: navColor ? '#121212' : ''}}
               to={`${item.id}`}>
               {item.label}
               </Link>

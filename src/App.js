@@ -33,11 +33,11 @@ function App() {
 
 
   const menuItems = [
-    {
-      id: "home",
-      label: "Home",
-      path: "/",
-    },
+    // {
+    //   id: "home",
+    //   label: "Home",
+    //   path: "/",
+    // },
     { id: "about", label: "AboutUs", path: "/about" },
     {
       id: "packages",
@@ -50,9 +50,9 @@ function App() {
       path: "/gallery",
     },
     {
-      id: "activities",
-      label: "Activities",
-      path: "/activities",
+      id: "services",
+      label: "Services",
+      path: "/services",
     },
     {
       id: "contact",
@@ -69,7 +69,7 @@ function App() {
       label: "Testimonials",
       path: "/testimonials",
     },
-    { id: "booking", label: "Booking", path: "/booking" },
+    { id: "booking", label: "Booking", path: "https://booking.thanimafarmlife.in/" },
   ];
 
   return (

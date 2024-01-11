@@ -20,7 +20,7 @@ function Services() {
         }
       }, []);
   return (
-    <div id='activities' className='services-body'>
+    <div id='services' className='services-body'>
         <div ref={tiltRef}>
             <h1>Our Diverse Offerings Includes..</h1>
         </div>

@@ -1,13 +1,5 @@
 import React, { useEffect } from "react";
-import fruit from "../../assets/images/fruit.JPG";
-import nalukettu from '../../assets/images/nalukettufrontside.jpg'
-import houseboat from "../../assets/images/houseboat.png"
-import room from "../../assets/images/nalukettu-rooms.jpg"
-import nadumuttam from "../../assets/images/nadumuttam.jpg"
-import pool from "../../assets/images/nalukettu-pool.png"
-
-
-
+import activity1 from "../../assets/images/stay1.jpg";
 
 function StayPckages() {
   useEffect(() => {
@@ -40,98 +32,388 @@ function StayPckages() {
   });
 
   return (
-    <div id="stay" className="stay-wrapper mt-5">
-      <h2>Stay</h2>
+    <div id="stay" className="stay-wrapper">
+      {/* <h2 className="mt-5">Check your dream stay</h2> */}
       <div class="container"></div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="tab-container stay-wrapper">
           <div class="tab-filter-container">
             <li class="filter-btn active" data-tab="web-design">
               <ion-icon name="desktop-outline"></ion-icon>
-              Naluekettu
+              Luxury Palace Room
             </li>
             <li class="filter-btn" data-tab="web-development">
               <ion-icon name="logo-nodejs"></ion-icon>
-              House Boat Stay
+              Family Room
             </li>
             <li class="filter-btn" data-tab="ettukettu">
               <ion-icon name="logo-nodejs"></ion-icon>
-              Ettukettu
+              Farm House
+            </li>
+            <li class="filter-btn" data-tab="bamboo-stay">
+              <ion-icon name="logo-nodejs"></ion-icon>
+              Nature Bamboo Hut
             </li>
           </div>
           <div class="tab-filter-item-container">
-            <div class="tab-item web-design select_tab nalu-kettu">
-              <div style={{backgroundImage:`url(${nalukettu})`}} className="nalukettu-wrapper">
-                 <h1>Nalukettu</h1>
+            <div class="tab-item web-design select_tab">
+              <div className="package-card-stay">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide package-carousal"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Second slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Third slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Third slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fourth slide"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div className="package-content">
+                  <h2 className="text-start text-dark align-items-center gap-3 font-weight-bold">
+                    {" "}
+                    Luxury Palace Room Including Food and Activities
+                  </h2>
+                  <p>
+                    Farm Fresh Lunch, Dinner, Breakfast, Refreshments,
+                    Tea/Coffee & Snacks, Guide Assisted Farm Visit & Activities
+                    including (15+ Activities).
+                  </p>
+                  <p>King Size Bed 2 Personal 14 Rooms</p>
+                  <div className="d-flex align-items-center">
+                    <h5 className="package-price text-success font-weight-bold">
+                      &#8377; 10210.00
+                    </h5>{" "}
+                    <small>/day</small>{" "}
+                  </div>
+                </div>
               </div>
             </div>
             <div class="tab-item web-development">
-            <div style={{backgroundImage:`url(${houseboat})`}} className="nalukettu-wrapper">
-                 <h1>House Boat</h1>
+              <div className="package-card-stay">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide package-carousal"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Second slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Third slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fourth slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fifth slide"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div className="package-content">
+                  <h2 className="text-start text-dark align-items-center gap-3 font-weight-bold">
+                    {" "}
+                    Family room for 8 person
+                  </h2>
+                  <p>
+                    2 Double decker family hall which can accommodate 8 people,
+                    also has 2 bathrooms attached. Farm fresh Lunch, Dinner,
+                    Breakfast, Refreshments, Tea/Coffee & snacks, Guide assisted
+                    farm visit & activities (15+ Activities)
+                  </p>
+                  <p>Double decker queen size 8 Personal 1 Rooms</p>
+                  <div className="d-flex align-items-center">
+                    <h5 className="package-price text-success font-weight-bold">
+                      &#8377; 27690.00
+                    </h5>{" "}
+                    <small>/day</small>{" "}
+                  </div>
+                </div>
               </div>
             </div>
             <div class="tab-item ettukettu">
-            <div style={{backgroundImage:`url(${houseboat})`}} className="nalukettu-wrapper">
-                 <h1>Ettukettu</h1>
+              <div className="package-card-stay">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide package-carousal"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Second slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Third slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fourth slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fifth slide"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div className="package-content">
+                  <h2 className="text-start text-dark align-items-center gap-3 font-weight-bold">
+                    {" "}
+                    Farm House
+                  </h2>
+                  <p>
+                    Farm fresh Lunch, Dinner, Breakfast, Refreshments,
+                    Tea/Coffee & snacks, Guide assisted farm visit & activities
+                    (15+ Activities) Farm fresh Lunch, Dinner, Breakfast,
+                    Refreshments, Tea/Coffee & snacks, Guide assisted farm visit
+                    & activities (15+ Activities).
+                  </p>
+                  <p>King Size Bed 2 Personal 3 Rooms</p>
+                  <div className="d-flex align-items-center">
+                    <h5 className="package-price text-success font-weight-bold">
+                      &#8377; 8080.00
+                    </h5>{" "}
+                    <small>/day</small>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item bamboo-stay">
+              <div className="package-card-stay">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide package-carousal"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="First slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Second slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Third slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fourth slide"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        class="d-block w-100"
+                        src={activity1}
+                        alt="Fifth slide"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div className="package-content">
+                  <h2 className="text-start text-dark align-items-center gap-3 font-weight-bold">
+                    {" "}
+                    Nature Bamboo Hut Room for 4 Person
+                  </h2>
+                  <p>1 double decker bed which can accommodate 4 people.</p>
+                  <p>Double decker queen size 4 Personal 2 Rooms</p>
+                  <div className="d-flex align-items-center">
+                    <h5 className="package-price text-success font-weight-bold">
+                      &#8377; 15040.00
+                    </h5>{" "}
+                    <small>/day</small>{" "}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-<div className="stay-variety">
-      <div class="flip-card">
-      <div style={{backgroundImage:`url(${room})`}} class="flip-card-front">
-        <div class="inner">
-          {/* <img src="https://i.imgur.com/C9DWUDi.png" class="icon" /> */}
-          {/* <h3>avengers</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-            corrupti itaque dolore!
-          </p> */}
-        </div>
-      </div>
-      <div style={{backgroundImage:`url(${room})`}} class="flip-card-back">
-        <div class="inner">
-          <h3>Rooms</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            voluptatum eius quam debitis, sit amet sunt neque ipsum?
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card">
-      <div style={{backgroundImage:`url(${nadumuttam})`}}  class="flip-card-front">
-        <div class="inner">
-        </div>
-      </div>
-      <div style={{backgroundImage:`url(${nadumuttam})`}} class="flip-card-back">
-        <div class="inner">
-          <h3>Nadumuttam</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            voluptatum eius quam debitis, sit amet sunt neque ipsum?
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card">
-      <div style={{backgroundImage:`url(${pool})`}} class="flip-card-front">
-        <div class="inner">
-        </div>
-      </div>
-      <div style={{backgroundImage:`url(${pool})`}} class="flip-card-back">
-        <div class="inner">
-          <h3>Pool</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            voluptatum eius quam debitis, sit amet sunt neque ipsum?
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
     </div>
   );
 }
