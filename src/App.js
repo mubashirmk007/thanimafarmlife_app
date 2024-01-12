@@ -27,6 +27,7 @@ import Dishes from "./containers/dishes";
 import StayPckages from "./containers/stayPackages";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Landing from "./main";
+import ScrollToTop from "./components/scrolltoTop";
 
 function App() {
   const [activeId, setActiveId] = useState(0);
@@ -84,9 +85,10 @@ function App() {
         <Route path="/" exact element={<Landing />}></Route>
         <Route path="/farm" exact element={<Farm />}></Route>
         <Route path="/stay" exact element={<StayPckages />}></Route>
-        <Route path="/adventures" exact element={<Adventures />}></Route>
+        <Route path="/activities" exact element={<Adventures />}></Route>
         <Route path="/dishes" exact element={<Dishes />}></Route>
       </Routes>
+      <ScrollToTop/>
       <Footer />
     </Router>
   );

@@ -4,6 +4,54 @@
     padding: 40px;
     background-color: rgb(24, 34, 48);
 }
-.adventures-wrapper h2{
+/* .adventures-wrapper h2{
     font-weight: 600;
-}
+} */
+
+.adv-card {
+    max-width: 80% !important;
+    flex-direction: row !important;
+    background-color: #2120207a !important;
+    border: 0 !important;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18) !important;
+    margin: 3em auto !important;
+  }
+  .card.dark {
+    color: #fff;
+  }
+
+  .adv-card img {
+    max-width: 25% !important;
+    margin: auto !important;
+    padding: 1em !important;
+    border-radius: 0.7em !important;
+  }
+  .adv-card-body {
+    display: flex !important;
+    /* justify-content: space-between !important; */
+  }
+  .text-section {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 475px) {
+    .adv-card{
+      font-size: 0.9em !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .adventures-wrapper{
+        padding-inline: 0px;
+    }
+    .adv-card img {
+        max-width: 100% !important;
+    }
+    .text-section {
+        max-width: 100%;
+    }
+  }
+  

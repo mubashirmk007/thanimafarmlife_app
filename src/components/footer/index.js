@@ -24,7 +24,7 @@ function Footer() {
             <h3 class="f-title f_600 t_color f_size_18">Help</h3>
             <ul class="list-unstyled f_list">
               <li><a href="#">Location</a></li>
-              <li><a href="#">Booking &amp; payment</a></li>
+              <li><a href="https://booking.thanimafarmlife.in/">Booking &amp; payment</a></li>
               <li><a href="#">Travel utility</a></li>
               <li><a href="#">Guideline</a></li>
               <li><a href="#">Gallery</a></li>
@@ -35,10 +35,10 @@ function Footer() {
           <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style={{visibility: "visible", animationDelay: "0.8s", animationName: "fadeInLeft"}}>
             <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
             <div class="f_social_icon">
-              <a href="#"><i class="bi bi-facebook"></i> </a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a target='_blank' href='https://www.facebook.com/Thanimafarmlife'><i class="bi bi-facebook"></i> </a>
+              <a target='_blank' href='https://www.instagram.com/thanimafarmlife/'><i class="bi bi-instagram"></i></a>
+              <a target='_blank' href='https://www.youtube.com/@thanimafarmlife/featured'><i class="bi bi-youtube"></i></a>
+              {/* <a href="#"><i class="bi bi-twitter"></i></a> */}
             </div>
             <div className="logo">
               <img src={logo} alt=""/>

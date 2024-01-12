@@ -118,6 +118,7 @@ nav.navbar {
     transition:  0.32s ease-in-out;
     /* background-color: #0f131a; */
   }
+
   .nav-link  .navbar-link{
     text-decoration: none !important;
     color: #fff !important;
@@ -125,16 +126,17 @@ nav.navbar {
     letter-spacing: 0.8px;
     padding: 0 15px;
     font-size: 18px;
-    opacity: 0.75;
+    opacity: 0.9;
   }
   nav.navbar.scrolled {
     padding: 18px 0;
     background-color: #0f131a;
     /* background-color: #fff; */
   }
-.active .navbar-link{
-    background-color:#4F7942;
-    border-radius: 5px;
+.active.navbar-link {
+    /* background-color:#4F7942;
+    border-radius: 5px; */
+    color: #fff !important;
   }
     /* nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
         color: #121212 !important;

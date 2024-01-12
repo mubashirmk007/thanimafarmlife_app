@@ -75,7 +75,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/food.webp') no-repeat;
+    background: url('../images/food.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -93,15 +93,15 @@
 }
 .services-wrapper .item-card .item-content h3{
     font-size: 1.8em;
-    color: #ffffff;
-    text-shadow: 2px 2px  #2b2a2a;
+    color: #fff;
+    text-shadow: 2px 2px  #232222;
     z-index: 1;
 }
 .services-wrapper .item-card .item-content p{
     font-size: 1em;
     color: #fff;
     font-weight: 300;
-    text-shadow: 2px 2px  #525050;
+    text-shadow: 2px 2px  #131212;
 }
 .services-wrapper .item-card .item-content a{
     position: relative;

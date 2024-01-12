@@ -41,16 +41,16 @@ function Services() {
         </div>
         <div className='item-card'>
             <div className='item-content'>
-                <h3>Adventures</h3>
-                <p>Lorem ipsum details section. This is a sample demo content</p>
-                <a href='adventures'>See More</a>
+                <h3>Activities</h3>
+                <p>20+ funfilled activities for eldeers as well as kids.</p>
+                <a href='activities'>See More</a>
             </div>
         </div>
         <div className='item-card'>
             <div className='item-content'>
                 <h3>Farm to table</h3>
-                <p>Lorem ipsum details section. This is a sample demo content</p>
-                <a href='dishes' >See More</a>
+                <p>Delectable recipes created with farm-sourced ingredients.</p>
+                <a href='#' >See More</a>
             </div>
         </div>
     </div>

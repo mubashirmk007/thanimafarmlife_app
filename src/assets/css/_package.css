@@ -8,6 +8,9 @@
     position: relative;
     overflow: hidden;
 }
+.pack-heading{
+    padding-inline: 105px;
+}
 /* .package-wrapper .package-contact{
     position: absolute;
     top: 15%;

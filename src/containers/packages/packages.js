@@ -17,7 +17,9 @@ import activity11 from "../../assets/images/activity11.jpg";
 function Packages() {
   return (
     <div id="packages" className="package-wrapper d-flex flex-column h-100">
-      <h3>Our Packages Includes...</h3>
+        <div className="pack-heading text-lg-start text-sm-center w-100">
+      <h2 className="text-bolder">Our Packages Includes...</h2>
+        </div>
       <div className="package-container">
         <div className="package-card">
           <div
